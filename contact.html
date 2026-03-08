@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 公司名称</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">公司名称</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="products.html">产品服务</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>联系我们</h1>
+            <p>期待与您的合作</p>
+        </div>
+    </section>
+
+    <!-- 联系内容 -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- 联系信息 -->
+                <div class="contact-info">
+                    <h2>联系方式</h2>
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <h4>邮箱</h4>
+                            <p>email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <h4>电话</h4>
+                            <p>400-XXX-XXXX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>地址</h4>
+                            <p>上海市 XX 区 XX 路 XX 号</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🕐</span>
+                        <div>
+                            <h4>工作时间</h4>
+                            <p>周一至周五 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 联系表单 -->
+                <div class="contact-form-wrapper">
+                    <h2>在线咨询</h2>
+                    <!-- 
+                        使用说明：
+                        1. 访问 https://formspree.io/ 注册免费账号
+                        2. 创建新表单，获取你的表单 ID
+                        3. 将下面的 YOUR_FORM_ID 替换为你的实际表单 ID
+                        4. 提交后，咨询信息将发送到你的邮箱
+                    -->
+                    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">姓名 *</label>
+                            <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱 *</label>
+                            <input type="email" id="email" name="email" required placeholder="请输入您的邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">电话</label>
+                            <input type="tel" id="phone" name="phone" placeholder="请输入您的联系电话">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">公司</label>
+                            <input type="text" id="company" name="company" placeholder="请输入您的公司名称">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">咨询内容 *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="请详细描述您的需求..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">发送咨询</button>
+                    </form>
+                    <p class="form-note">* 为必填项，我们将在 1-2 个工作日内回复您</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>公司名称</h4>
+                    <p>专业解决方案提供商</p>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>📧 email@example.com</p>
+                    <p>📞 400-XXX-XXXX</p>
+                </div>
+                <div class="footer-section">
+                    <h4>地址</h4>
+                    <p>📍 上海市 XX 区 XX 路 XX 号</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 公司名称。All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
